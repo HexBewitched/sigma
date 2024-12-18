@@ -39,7 +39,7 @@ export default function Index() {
   }
   else if(page === 1)
   {
-    return(<MainPage money={money} setPage={setPage}/>);
+    return(<MainPage money={money} setMoney={setMoney} setPage={setPage}/>);
   }
 }
 
@@ -56,12 +56,11 @@ const styles = StyleSheet.create({
   small: {
     flex: 1,
     textAlign: "center",
-    paddingTop: "5%",
-    fontSize: 18
+    fontSize: 40
   },
   body: {
     flex: 1,
-    backgroundColor: '#3b5c3c',
+    backgroundColor: '#678868',
     position: "absolute",
     alignItems: "center",
     top: "50%",
